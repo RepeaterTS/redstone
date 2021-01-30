@@ -1,40 +1,27 @@
 {
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/app.js",
-    "debug": "node --loader ts-node/esm src/app.js",
-    "postinstall": "npm run build"
-  },
+  "name": "@repeaterts/redstone",
+  "version": "1.0.0",
+  "description": "Handle the minecraft protocol with ease",
+  "main": "dist/src/index.js",
+  "repository": "https://github.com/RepeaterTS/redstone.git",
+  "author": "@repeaterts",
   "license": "MIT",
-  "dependencies": {
-    "minecraft-data": "^2.74.0",
-    "prismarine-nbt": "^1.4.0",
-    "protodef": "^1.8.3",
-    "readable-stream": "^3.6.0",
+  "devDependencies": {
+    "@repeaterts/eslint-config": "^1.0.9",
+    "@repeaterts/ts-config": "^1.0.10",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.18.0",
+    "jest": "^26.6.3",
+    "jest-circus": "^26.6.3",
+    "ts-jest": "^26.5.0",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.19",
     "typescript": "^4.1.3"
   },
-  "devDependencies": {
-    "@types/node": "^14.14.22",
-    "@types/readable-stream": "^2.3.9",
-    "ts-node": "^9.1.1"
-  },
-  "name": "redstone",
-  "version": "1.0.0",
-  "description": "a node-minecraft-protocol alternative",
-  "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RepeaterTS/redstone.git"
-  },
-  "keywords": [
-    "minecraft",
-    "protocol",
-    "nmp"
-  ],
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/RepeaterTS/redstone/issues"
-  },
-  "homepage": "https://github.com/RepeaterTS/redstone#readme"
+  "dependencies": {
+    "mcproto": "^0.9.0"
+  }
 }

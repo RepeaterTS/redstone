@@ -1,15 +1,3 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "sourceMap": true,
-    "declaration": true,
-    "strict": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "outDir": "dist"
-  },
-  "include": ["src"],
-  "exclude": ["dist", "node_modules"]
+  "extends": "@repeaterts/ts-config"
 }
